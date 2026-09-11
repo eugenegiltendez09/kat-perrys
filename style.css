@@ -62,3 +62,233 @@ footer button{background:none;border:0;color:#fff;font-weight:700;cursor:pointer
  h1{font-size:52px}.hero{min-height:680px}.hero-card{width:210px}.feature-strip{grid-template-columns:1fr 1fr}
  .feature-strip div{padding:25px 10px}.hours-row{flex-direction:column;gap:5px}.nav-link{display:none}
 }
+/* =========================================
+   MENU — REFERENCE IMAGE STYLE
+========================================= */
+
+.menu-reference {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 70px 50px;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: 1fr 180px 1fr;
+  gap: 35px;
+
+  background: #ffffff;
+  color: #000000;
+}
+
+/* =========================================
+   SIDES
+========================================= */
+
+.menu-side {
+  width: 100%;
+}
+
+.menu-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 38px;
+}
+
+.menu-heading span {
+  height: 2px;
+  background: #000000;
+  flex: 1;
+  max-width: 70px;
+}
+
+.menu-heading h2 {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  color: #000000;
+}
+
+/* =========================================
+   TWO COLUMNS
+========================================= */
+
+.menu-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+}
+
+.menu-column {
+  min-width: 0;
+}
+
+/* =========================================
+   MENU ITEM
+========================================= */
+
+.menu-item {
+  margin-bottom: 22px;
+}
+
+.menu-item h3 {
+  margin: 0 0 4px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  line-height: 1.15;
+  font-weight: 800;
+
+  color: #000000;
+}
+
+.menu-item h3 b {
+  font-weight: 800;
+}
+
+.menu-item p {
+  margin: 0;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  line-height: 1.25;
+  font-weight: 500;
+
+  color: #000000;
+}
+
+.menu-item small {
+  display: block;
+
+  margin-top: 2px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 8px;
+  line-height: 1.2;
+
+  color: #000000;
+}
+
+/* =========================================
+   CENTER LOGO
+========================================= */
+
+.menu-center-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding-top: 0;
+}
+
+.logo-circle {
+  width: 105px;
+  height: 105px;
+
+  border-radius: 50%;
+
+  background: #000000;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.logo-circle span {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-style: italic;
+  line-height: 1;
+}
+
+.logo-circle strong {
+  margin-top: 4px;
+
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.menu-center-logo small {
+  margin-top: -3px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 7px;
+  font-weight: 700;
+
+  color: #000000;
+  letter-spacing: 2px;
+
+  order: -1;
+  transform: translateY(-10px);
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .menu-reference {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .menu-center-logo {
+    order: -1;
+  }
+
+  .sweet-side {
+    order: 1;
+  }
+
+  .savory-side {
+    order: 2;
+  }
+
+  .menu-center-logo small {
+    order: -1;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .menu-reference {
+    padding: 50px 20px;
+  }
+
+  .menu-columns {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .menu-heading h2 {
+    font-size: 28px;
+    letter-spacing: 5px;
+  }
+
+  .menu-heading span {
+    max-width: 45px;
+  }
+
+  .menu-item {
+    margin-bottom: 25px;
+  }
+
+  .menu-item h3 {
+    font-size: 13px;
+  }
+
+  .menu-item p {
+    font-size: 10px;
+  }
+}
