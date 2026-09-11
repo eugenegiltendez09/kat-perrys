@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kat & Perry's Cafe in Casuntingan, Mandaue City, Cebu.">
+  <title>Kat & Perry's Cafe — Mandaue City</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a href="#" class="brand"><span>KP</span> Kat & Perry's</a>
+    <a class="nav-link" href="#visit">Visit Us ↗</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <p class="eyebrow">CAFÉ • MANDAUE CITY</p>
+      <h1>A little place<br><em>for good moments.</em></h1>
+      <p class="intro">Coffee, conversations, and cozy moments at Kat & Perry's Cafe.</p>
+      <div class="hero-actions">
+        <a class="btn btn-light" target="_blank"
+          href="https://www.google.com/maps/search/?api=1&query=Kat%20%26%20Perry%27s%20Cafe%2C%20M.%20L.%20Quezon%20Ave%2C%20Casuntingan%2C%20Mandaue%2C%20Cebu">Get Directions <span>↗</span></a>
+        <a class="btn btn-ghost" href="#about">Explore Cafe</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="rating"><strong>3.8</strong><span>★</span></div>
+      <div><b>27</b> Google reviews</div>
+      <div class="divider"></div>
+      <div><b>₱1–500</b><br><small>per person</small></div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section about">
+      <div class="section-label">01 — ABOUT</div>
+      <div>
+        <h2>Welcome to<br><em>Kat & Perry's.</em></h2>
+        <p>Located along M. L. Quezon Avenue in Casuntingan, Mandaue City, Cebu, Kat & Perry's Cafe is a casual cafe destination for coffee, food, and relaxed conversations.</p>
+      </div>
+    </section>
+
+    <section class="feature-strip">
+      <div><span>☕</span><b>Café</b><small>Relax & enjoy</small></div>
+      <div><span>₱</span><b>₱1–500</b><small>Per person</small></div>
+      <div><span>★</span><b>3.8 / 5</b><small>27 reviews</small></div>
+      <div><span>◷</span><b>12 PM–12 AM</b><small>Open daily</small></div>
+    </section>
+
+    <section class="section visit" id="visit">
+      <div class="section-label">02 — VISIT</div>
+      <div class="visit-content">
+        <div>
+          <h2>Come by<br><em>and stay awhile.</em></h2>
+          <p class="address">M. L. Quezon Ave,<br>Casuntingan, Mandaue,<br>6014 Cebu</p>
+          <div class="actions">
+            <a class="btn btn-dark" target="_blank"
+              href="https://www.google.com/maps/search/?api=1&query=Kat%20%26%20Perry%27s%20Cafe%2C%20M.%20L.%20Quezon%20Ave%2C%20Casuntingan%2C%20Mandaue%2C%20Cebu">Open in Maps ↗</a>
+            <button class="btn btn-outline" onclick="copyAddress()">Copy Address</button>
+          </div>
+        </div>
+        <div class="hours-card">
+          <p class="mini-label">OPENING HOURS</p>
+          <div class="hours-row"><span>Monday – Sunday</span><strong>12:00 PM — 12:00 AM</strong></div>
+          <div class="open-note">● Open daily</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section connect">
+      <div class="section-label">03 — CONNECT</div>
+      <div>
+        <h2>Find us<br><em>online.</em></h2>
+        <div class="social-grid">
+          <a target="_blank" href="https://www.facebook.com/search/top?q=Kat%20%26%20Perry%27s%20Cafe"><span>f</span><div><b>Facebook</b><small>Follow the cafe</small></div><strong>↗</strong></a>
+          <a target="_blank" href="https://www.google.com/search?q=Kat+%26+Perry%27s+Cafe+Mandaue+reviews"><span>★</span><div><b>Google Reviews</b><small>See customer reviews</small></div><strong>↗</strong></a>
+          <a target="_blank" href="https://www.google.com/search?q=Kat+%26+Perry%27s+Cafe+Mandaue"><span>⌕</span><div><b>Web Search</b><small>More cafe information</small></div><strong>↗</strong></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">Kat & Perry's Cafe</div>
+    <p>Mandaue City, Cebu • 2026</p>
+    <button onclick="shareCafe()">Share this cafe ↗</button>
+    <div id="message"></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
